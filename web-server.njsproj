@@ -29,6 +29,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="package.json" />
     <Content Include="public\js\app.js" />
     <Content Include="README.md" />
