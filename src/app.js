@@ -56,9 +56,9 @@ app.get('/weather', (req, res) => {
                     return res.send('Unable get forecast: ' + error)
                 }
                 res.send({
-                    forecast: forecastData,
+                    forecast: forecastData.cur,
                     location: loc,
-                    address: req.query.address
+                    addlInfo: forecastData.addlInfo
                 })
             })
         })
